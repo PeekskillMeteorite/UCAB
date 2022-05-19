@@ -35,7 +35,7 @@ h4{
 
 .hero-banner{
 	background-color: #40B0E0;
-	height: 100vh;
+	min-height: 100vh;
 	padding: 50px 20px;
 	box-sizing: border-box;
 	position: relative;
@@ -62,7 +62,7 @@ h4{
 	background-size: 100%;
 	width: 200px;
 	height: 400px;
-	position: absolute; top: 107px; right: 70px;
+	position: absolute; top: 107px; right: 10%;
 }
 
 .estudiante2{
@@ -70,7 +70,7 @@ h4{
 	background-size: 100%;
 	width: 200px;
 	height: 400px;
-	position: absolute; top: 213px; right: 210px;
+	position: absolute; top: 213px; right: 20%;
 }
 
 .estudiante3{
@@ -78,7 +78,7 @@ h4{
 	background-size: 100%;
 	width: 200px;
 	height: 400px;
-	position: absolute; top: 313px; right: 130px;
+	position: absolute; top: 313px; right: 15%;
 }
 
 a.cta, button.cta{
