@@ -1,3 +1,120 @@
-body{
-	background-color: yellow;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+body, html{
+	font-family: 'Poppins', sans-serif;
+	padding: 0;
+	margin: 0;
 }
+
+h3{
+	font-size: 30px;
+	font-weight: bold;
+	position: relative;
+	z-index: 1;
+}
+
+h1{
+	font-weight: 800;
+	font-size: 50px;
+	position: relative;
+	z-index: 1;
+}
+
+h4{
+	font-weight: bold;
+	font-size: 20px;
+	position: relative;
+	z-index: 1;
+}
+
+.wrapper{
+	width: 960px;
+	margin: 0 auto;
+
+}
+
+.hero-banner{
+	background-color: #40B0E0;
+	height: 100vh;
+	padding: 50px 20px;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+}
+
+.hero-banner h1{
+	color: white;
+	margin: 14px 0 20px 0;
+}
+
+.hero-banner h3{
+	color: white;
+	margin: 0 0 35px;
+}
+
+.hero-banner h4{
+	color: white;
+	margin: 0;
+}
+
+.estudiante1{
+	background: url(img/guy.png) no-repeat 0 0;
+	background-size: 100%;
+	width: 200px;
+	height: 400px;
+	position: absolute; top: 107px; right: 70px;
+}
+
+.estudiante2{
+	background: url(img/girl.png) no-repeat 0 0;
+	background-size: 100%;
+	width: 200px;
+	height: 400px;
+	position: absolute; top: 213px; right: 210px;
+}
+
+.estudiante3{
+	background: url(img/dude.png) no-repeat 0 0;
+	background-size: 100%;
+	width: 200px;
+	height: 400px;
+	position: absolute; top: 313px; right: 130px;
+}
+
+a.cta, button.cta{
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	background-color: #40B4E5;
+	display: inline-block;
+	box-shadow: 0 0 0 10px rgba(10, 80, 100, .15);
+	padding: 20px 30px;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+a.cta.alt, button.cta.alt{
+	background-color: #FFC526;
+	color: #111111;
+	box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.15);
+	position: relative;
+	z-index: 1;
+}
+
+/*
+<div class="hero-banner">
+		<div class="wrapper">
+			<h4>Los estudiantes de Ingeniería Informática presentan: </h4>
+			<h1>La universidad<br>
+				más prestigiosa<br>
+				del país</h1>
+				<h3>Andrés, Bruno y Carla.<br>
+				 Ellos serán tus guías digítales<br> 
+				 en esta web universitaria.</h3>
+				 <a class="cta alt" href="#mas">Saber más...</a>
+		</div>
+		<div class="estudiante1"></div>
+		<div class="estudiante2"></div>
+		<div class="estudiante3"></div>
+</div>
+*/
