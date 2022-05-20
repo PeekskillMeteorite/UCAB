@@ -20,11 +20,22 @@ h1{
 	z-index: 1;
 }
 
+h2{
+	font-size: 50px;
+	font-weight: 800;
+}
+
 h4{
 	font-weight: bold;
 	font-size: 20px;
 	position: relative;
 	z-index: 1;
+}
+
+p{
+	font-size: 30px;
+	font-weight: bold;
+	margin: 30px 0;
 }
 
 .wrapper{
@@ -101,20 +112,66 @@ a.cta.alt, button.cta.alt{
 	z-index: 1;
 }
 
+nav{
+	height: 120px;
+	background-color: white;
+	box-shadow: 0  5px 8px rgba(0,0,0,.2);
+	position: sticky;
+	top: 0;
+	z-index: 2;
+}
+
+nav .logo{
+	display: block;
+	width: 98px;
+	height: 100px;
+	position: absolute; top: 50%; left: 3%;
+	margin-top: -50px;
+	background: url(img/ucab-logo.png) no-repeat 0 0;
+	background-size: 100%;
+	text-indent: -999px;
+	overflow: hidden;
+}
+
+nav ul{
+	padding: 0;
+	margin: 0 3% 0 0;
+}
+
+nav ul li{
+	margin: 0;
+	padding: 0;
+	display: block;
+	float: right;
+}
+
+nav ul li a{
+	display: block;
+	font-size: 30px;
+	height: 100%;
+	box-sizing: border-box;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #111111;
+	text-decoration: none;
+	line-height: 30px;
+	padding: 45px 10px;
+}
+
+nav ul li a:hover{
+	color: #047732;
+}
+
+.more-info{
+	text-align: center;
+}
+
+
+
 /*
-<div class="hero-banner">
-		<div class="wrapper">
-			<h4>Los estudiantes de Ingeniería Informática presentan: </h4>
-			<h1>La universidad<br>
-				más prestigiosa<br>
-				del país</h1>
-				<h3>Andrés, Bruno y Carla.<br>
-				 Ellos serán tus guías digítales<br> 
-				 en esta web universitaria.</h3>
-				 <a class="cta alt" href="#mas">Saber más...</a>
-		</div>
-		<div class="estudiante1"></div>
-		<div class="estudiante2"></div>
-		<div class="estudiante3"></div>
+<div class="more-info" id="mas">
+	<h2>Unete a nuestra comunidad</h2>
+	<p>Tenemos <span class="highlight">una fiesta</span> cada semana. Si quieres participar, unete a nuestra comunidad. Todos los miembros recibirán fotografías del evento, con los filtros que deseen. ¡Genial! ¿no?</p>
+	<button class="cta">¡Unirme!</button>
 </div>
 */
