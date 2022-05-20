@@ -25,7 +25,7 @@
 	<nav>
 		<a href="#" class="logo">UCAB</a>
 		<ul>
-			<li><a href="#">Registro</a></li>
+			<li><a href="javascript:()" onclick="showPopup()">Registro</a></li>
 			<li><a href="#historia">Sobre la UCAB</a></li>
 			<li><a href="#mas">Más información</a></li>
 		</ul>
@@ -34,11 +34,12 @@
 		<div class="wrapper">
 			<h2>Unete a nuestra comunidad</h2>
 			<p>Tenemos <span class="highlight">una fiesta</span> cada semana. Si quieres participar, unete a nuestra comunidad. Todos los miembros recibirán fotografías del evento, con los filtros que deseen. ¡Genial! ¿no?</p>
-			<button class="cta">¡Unirme!</button>
+			<button class="cta" onclick="showPopup()">¡Unirme!</button>
 		</div>
 	</div>
+	<div id="historia"></div>
 	<div class="sep"></div>
-	<div class="story" id="historia">
+	<div class="story">
 		<div class="wrapper">
 			<ul class="nb-list">
 				<li class="blue">Ingeniería</li>
@@ -63,31 +64,38 @@
 	<footer>
 		Hecho por <a href="https://peekskillmeteorite.github.io/cartoon-hero/">Ángel Prieto</a>
 	</footer>
-	<div class="popup">
+	<div class="popup" id="popup">
 		<div class="blanket"></div>
-		<div class="content"></div>
+		<div class="content">
 			<h2>Ingresa tus datos</h2>
 			<form action="">
-				<div class="item">
-					<label>Nombre</label>
-					<input type="text" placeholder="Nombre">
+				<div class="row">
+					<div class="item">
+						<label>Nombre</label>
+						<input type="text" placeholder="Nombre">
+					</div>
+					<div class="item">
+						<label>Apellido</label>
+						<input type="text" placeholder="Apellido">
+					</div>
 				</div>
-				<div class="item">
-					<label>Apellido</label>
-					<input type="text" placeholder="Apellido">
-				</div>
-				<div class="item">
-					<label>Carrera</label>
-					<input type="text" placeholder="Estudio">
-				</div>
-				<div class="item">
-					<label>Facultad</label>
-					<input type="text" placeholder="Escuela">
+				<div class="row">
+					<div class="item">
+						<label>Carrera</label>
+						<input type="text" placeholder="Estudio">
+					</div>
+					<div class="item">
+						<label>Facultad</label>
+						<input type="text" placeholder="Escuela">
+					</div>
 				</div>
 				<button class="cta">¡Unirme!</button>
 			</form>
-			<button class="close">Close</button>
+			<button class="close" onclick="hidePopup()">Close</button>
+		</div>
 	</div>
+
+	<script src="script.js" type="text/javascript"></script>
 
 </body>
 </html>
