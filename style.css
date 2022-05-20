@@ -166,7 +166,22 @@ nav ul li a:hover{
 	text-align: center;
 }
 
+.more-info p{
+	margin: 18px 0 50px;
+}
 
+.more-info h2{
+	margin: 50px 0 0;
+}
+
+.highlight{
+	background-color: #FFCAFF;
+	color: #FF0000;
+	padding: 5px 10px;
+	line-height: 50px;
+	display: inline;
+	font-weight: 800;
+}
 
 /*
 <div class="more-info" id="mas">
